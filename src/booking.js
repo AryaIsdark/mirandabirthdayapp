@@ -3,8 +3,10 @@ import booking from "./booking.jpeg";
 import flightTo from "./flightTo.jpeg";
 import flightBack from "./flightBack.jpeg";
 import checkIn from "./check-in-out.jpeg";
+import { useNavigate } from "react-router-dom";
 
 export const Booking = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <img
@@ -21,7 +23,7 @@ export const Booking = () => {
               style={{
                 display: "flex",
 
-                justifyContent: "space-evenly"
+                justifyContent: "space-evenly",
               }}
             >
               <div className="border-box">
@@ -45,6 +47,7 @@ export const Booking = () => {
       <img width="100%" src={checkIn} alt="checkIn" />
       <img width="100%" src={flightTo} alt="flightTo" />
       <img width="100%" src={flightBack} alt="flightBack" />
+      <a onClick={() => navigate("/checklist")}>Checklist</a>
     </div>
   );
 };
