@@ -16,7 +16,7 @@ export const Home = () => {
   const isAfter = isAfterDate("2023-04-28");
 
   return (
-    <div className="App">
+    <div className="home-page">
       {(videoEnded || isAfter) && <Booking />}
 
       {!videoEnded && (

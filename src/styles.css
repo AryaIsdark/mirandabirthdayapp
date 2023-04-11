@@ -5,8 +5,18 @@ body {
   padding: 0;
   margin: 0;
 }
-.App {
-  text-align: center;
+
+.home-page {
+  background: url("https://i.pinimg.com/originals/4d/20/a3/4d20a3ddcb3c8f5e997902e2de511b2a.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #f4b1ab;
+  background-position: bottom right;
+}
+
+.page-container {
+  padding: 10px;
 }
 
 button {
@@ -25,4 +35,13 @@ button {
   background: rgb(226, 225, 225);
   padding: 10px;
   border-radius: 10px;
+}
+
+.checklist-content {
+  font-size: 25px;
+}
+
+.checklist-content input[type="checkbox"] {
+  width: 18px;
+  height: 16px;
 }
