@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38fb98a4.css",
+    "main.js": "/static/js/main.9c95fb41.js",
+    "static/media/video.mp4": "/static/media/video.45fc5f4faab8d816b440.mp4",
+    "static/media/booking.jpeg": "/static/media/booking.48fd8e955643117993db.jpeg",
+    "static/media/flightBack.jpeg": "/static/media/flightBack.5f79e4316de955e91c35.jpeg",
+    "static/media/flightTo.jpeg": "/static/media/flightTo.8c50a7c3dac7a75244f4.jpeg",
+    "static/media/check-in-out.jpeg": "/static/media/check-in-out.2f26da3f1bcae69f9190.jpeg",
+    "index.html": "/index.html",
+    "main.38fb98a4.css.map": "/static/css/main.38fb98a4.css.map",
+    "main.9c95fb41.js.map": "/static/js/main.9c95fb41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38fb98a4.css",
+    "static/js/main.9c95fb41.js"
+  ]
+}
