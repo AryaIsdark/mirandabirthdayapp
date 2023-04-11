@@ -44,24 +44,30 @@ export const Checklist = () => {
   }, []);
 
   return (
-    <div className="page-container">
-      <h4>Checklist befor flight</h4>
-      <div className="checklist-content">
-        {checklist.map((item) => (
-          <div onClick={() => updateChecklistItem(item)}>
-            <input
-              disabled={isUpdating}
-              type="checkbox"
-              checked={item.isChecked}
-            />{" "}
-            <span
-              style={{ textDecoration: item.isChecked ? "line-through" : "" }}
-            >
-              {item.label}
-            </span>
-          </div>
-        ))}
+    <>
+      <img
+        height="300"
+        src="https://i.insider.com/5e8f70a8c023205e4245d983?width=700"
+      />
+      <div className="page-container">
+        <h4>Checklist before flight</h4>
+        <div className="checklist-content">
+          {checklist.map((item) => (
+            <div onClick={() => updateChecklistItem(item)}>
+              <input
+                disabled={isUpdating}
+                type="checkbox"
+                checked={item.isChecked}
+              />{" "}
+              <span
+                style={{ textDecoration: item.isChecked ? "line-through" : "" }}
+              >
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
