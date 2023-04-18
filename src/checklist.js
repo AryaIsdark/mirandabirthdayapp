@@ -3,31 +3,52 @@ import { useEffect, useState } from "react";
 export const Checklist = () => {
   const [checklist, setChecklist] = useState([]);
   const [isUpdating, setIsUpdating] = useState(false);
+  const [isCreating, setIsCreating] = useState(false);
+  const [newItem, setNewItem] = useState("");
+
+  const url = "https://64346725582420e2317b8eb4.mockapi.io/checklist";
+
+  const handleSaveChecklistItem = () => {
+    window
+      .fetch(`${url}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ label: newItem }),
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setIsCreating(false);
+        setNewItem("");
+        getChecklist();
+      })
+      .catch((error) => {
+        setIsCreating(false);
+        console.error(error);
+      });
+  };
 
   const getChecklist = () => {
-    window
-      .fetch("https://64346725582420e2317b8eb4.mockapi.io/checklist")
-      .then((res) =>
-        res.json().then((data) => {
-          console.log(data);
-          setChecklist(data);
-        })
-      );
+    window.fetch(url).then((res) =>
+      res.json().then((data) => {
+        console.log(data);
+        setChecklist(data);
+      })
+    );
   };
 
   const updateChecklistItem = (item) => {
     setIsUpdating(true);
     window
-      .fetch(
-        `https://64346725582420e2317b8eb4.mockapi.io/checklist/${item.id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ isChecked: !item.isChecked }),
-        }
-      )
+      .fetch(`${url}/${item.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ isChecked: !item.isChecked }),
+      })
       .then((response) => response.json())
       .then((data) => {
         setIsUpdating(false);
@@ -66,6 +87,20 @@ export const Checklist = () => {
               </span>
             </div>
           ))}
+        </div>
+        <div className="checklist-footer">
+          <input
+            placeholder="Add checklist item..."
+            onChange={(e) => setNewItem(e.target.value)}
+            disabled={isCreating}
+            value={newItem}
+          />
+          <button
+            disabled={isCreating || newItem.length < 2}
+            onClick={handleSaveChecklistItem}
+          >
+            Save
+          </button>
         </div>
       </div>
     </>

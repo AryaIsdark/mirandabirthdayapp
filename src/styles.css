@@ -6,6 +6,20 @@ body {
   margin: 0;
 }
 
+button {
+  background: #b569b5;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+input {
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  width: 100%;
+  box-shadow: 0 0 5px #c0c0c04d;
+}
+
 .home-page {
   background: url("https://i.pinimg.com/originals/4d/20/a3/4d20a3ddcb3c8f5e997902e2de511b2a.jpg");
   background-size: cover;
@@ -19,7 +33,7 @@ body {
   padding: 10px;
 }
 
-button {
+.round-button {
   background: black;
   border: none;
   border: 2px solid white;
@@ -44,4 +58,12 @@ button {
 .checklist-content input[type="checkbox"] {
   width: 18px;
   height: 16px;
+}
+
+.checklist-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
 }
