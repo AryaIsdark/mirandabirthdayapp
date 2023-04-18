@@ -66,10 +66,6 @@ input {
   border-radius: 10px;
 }
 
-.checklist-content input[type="checkbox"] {
-  width: 10px;
-}
-
 .checklist-footer {
   position: fixed;
   bottom: 0;
