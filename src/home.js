@@ -44,7 +44,6 @@ export const Home = () => {
                 To see your birthday present you need to wear your earbuds. Once
                 you have them on press the <b>"Ready"</b> button.
               </p>
-              <br />
             </div>
             <button className="round-button" onClick={() => setPlaying(true)}>
               Ready

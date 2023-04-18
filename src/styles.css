@@ -6,7 +6,7 @@ body {
 }
 
 button {
-  background: #b569b5;
+  background: #ba3899ab;
   border: none;
   padding: 10px 20px;
   color: white;
@@ -20,11 +20,10 @@ input {
 .home-page {
   background: url("./ezgif.gif");
   font-family: "Fasthand";
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
   background-repeat: no-repeat;
-  background-color: #f4b1ab;
-  background-position: bottom right;
+  background-color: white;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -32,8 +31,8 @@ input {
 }
 
 .home-page .container {
-  padding: 20px;
-  background: #ffffffe0;
+  padding: 11px;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +40,10 @@ input {
   font-size: 1.25rem;
   color: #313131;
   margin: 30px;
-  border-radius: 14px;
+  border-radius: 38%;
+  position: relative;
+  top: -7px;
+  box-shadow: 0 -49px 30px -59px #000000c2;
 }
 
 .page-container {
@@ -49,7 +51,7 @@ input {
 }
 
 .round-button {
-  background: #176814ab;
+  background: #ba3899ab;
   border: none;
   border-radius: 40% 19% 39% 23%;
   font-size: 21px;
