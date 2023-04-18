@@ -25,20 +25,29 @@ export const Home = () => {
     <div className="home-page">
       <div>
         {!playing && (
-          <div style={{ padding: "20px" }}>
-            <h1>
-              Hi Miranda{" "}
+          <div className="container">
+            <h3>
               <span role="img" aria-label="heart">
                 💕
               </span>{" "}
-            </h1>
+              Dear Miranda{" "}
+              <span role="img" aria-label="heart">
+                💕
+              </span>{" "}
+            </h3>
             <p>
-              Today is your birthday how great is that... to see your birthday
-              present you need to wear your earbuds. Once you have them on press
-              the button.
+              Today is your birthday and how great is that... Thank you for
+              being an amazing partner and mother.
             </p>
+            <p>
+              To see your birthday present you need to wear your earbuds. Once
+              you have them on press the <b>"Ready"</b> button.
+            </p>
+            <br />
 
-            <button onClick={() => setPlaying(true)}>Ready</button>
+            <button className="round-button" onClick={() => setPlaying(true)}>
+              Ready
+            </button>
           </div>
         )}
         <Video

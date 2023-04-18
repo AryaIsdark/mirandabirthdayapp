@@ -21,12 +21,29 @@ input {
 }
 
 .home-page {
-  background: url("https://i.pinimg.com/originals/4d/20/a3/4d20a3ddcb3c8f5e997902e2de511b2a.jpg");
+  background: url("https://im2.ezgif.com/tmp/ezgif-2-4a35e02b90.gif");
+  font-family: "Satisfy";
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
   background-color: #f4b1ab;
   background-position: bottom right;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-page .container {
+  padding: 20px;
+  background: #ffffffb3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  color: #313131;
 }
 
 .page-container {
@@ -34,15 +51,15 @@ input {
 }
 
 .round-button {
-  background: black;
+  background: #176814ab;
   border: none;
-  border: 2px solid white;
-  border-radius: 100%;
-  font-size: 20px;
-  padding: 10px;
+  border-radius: 40% 19% 39% 23%;
+  font-size: 21px;
+  padding: 12px;
   color: white;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 120px;
+  box-shadow: 0 -3px 43px -13px #494848;
 }
 
 .border-box {
