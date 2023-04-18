@@ -31,7 +31,7 @@ input {
 }
 
 .home-page .container {
-  padding: 0px;
+  padding: 30px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -39,12 +39,8 @@ input {
   justify-content: center;
   font-size: 1.25rem;
   color: #313131;
-  margin: 30px;
-  border-radius: 33%;
   position: relative;
-  top: -42px;
-  box-shadow: 0 -49px 30px -58px #00000063;
-  margin: 50px;
+  box-shadow: 0 -44px 56px -65px #000000;
 }
 
 .page-container {
@@ -60,7 +56,7 @@ input {
   color: white;
   height: 110px;
   width: 120px;
-  box-shadow: 0 -3px 43px -13px #494848;
+  box-shadow: 0 10px 20px -13px #494848;
 }
 
 .border-box {
