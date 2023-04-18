@@ -16,8 +16,6 @@ button {
 input {
   padding: 20px;
   border: 1px solid whitesmoke;
-  width: 100%;
-  box-shadow: 0 0 5px #c0c0c04d;
 }
 
 .home-page {
@@ -68,13 +66,8 @@ input {
   border-radius: 10px;
 }
 
-.checklist-content {
-  font-size: 13px;
-}
-
 .checklist-content input[type="checkbox"] {
-  width: 18px;
-  height: 16px;
+  width: 10px;
 }
 
 .checklist-footer {
