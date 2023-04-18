@@ -1,5 +1,5 @@
 body {
-  font-family: helvetica;
+  font-family: "Comic Neue", cursive;
   font-weight: 100;
   padding: 0;
   margin: 0;
@@ -19,7 +19,7 @@ input {
 
 .home-page {
   background: url("./ezgif.gif");
-  font-family: "Fasthand";
+
   background-size: contain;
   height: 100vh;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ input {
 }
 
 .home-page .container {
-  padding: 11px;
+  padding: 0px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -40,10 +40,11 @@ input {
   font-size: 1.25rem;
   color: #313131;
   margin: 30px;
-  border-radius: 38%;
+  border-radius: 33%;
   position: relative;
-  top: -7px;
-  box-shadow: 0 -49px 30px -59px #000000c2;
+  top: -42px;
+  box-shadow: 0 -49px 30px -58px #00000063;
+  margin: 50px;
 }
 
 .page-container {
