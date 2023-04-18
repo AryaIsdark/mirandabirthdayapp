@@ -33,12 +33,12 @@ input {
 
 .home-page .container {
   padding: 20px;
-  background: #ffffff;
+  background: #ffffffe0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   color: #313131;
   margin: 30px;
   border: 1px solid #bfbfbf;
