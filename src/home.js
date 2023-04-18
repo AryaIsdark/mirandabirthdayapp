@@ -25,30 +25,31 @@ export const Home = () => {
     <div className="home-page">
       <div>
         {!playing && (
-          <div className="container">
-            <h3>
-              <span role="img" aria-label="heart">
-                💕
-              </span>{" "}
-              Dear Miranda{" "}
-              <span role="img" aria-label="heart">
-                💕
-              </span>{" "}
-            </h3>
-            <p>
-              Today is your birthday and how great is that... Thank you for
-              being an amazing partner and mother.
-            </p>
-            <p>
-              To see your birthday present you need to wear your earbuds. Once
-              you have them on press the <b>"Ready"</b> button.
-            </p>
-            <br />
-
+          <>
+            <div className="container">
+              <h3>
+                <span role="img" aria-label="heart">
+                  💕
+                </span>{" "}
+                Dear Miranda{" "}
+                <span role="img" aria-label="heart">
+                  💕
+                </span>{" "}
+              </h3>
+              <p>
+                Today is your birthday and how great is that... Thank you for
+                being an amazing partner and mother.
+              </p>
+              <p>
+                To see your birthday present you need to wear your earbuds. Once
+                you have them on press the <b>"Ready"</b> button.
+              </p>
+              <br />
+            </div>
             <button className="round-button" onClick={() => setPlaying(true)}>
               Ready
             </button>
-          </div>
+          </>
         )}
         <Video
           playing={playing}

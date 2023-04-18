@@ -33,14 +33,16 @@ input {
 
 .home-page .container {
   padding: 20px;
-  background: #ffffffb3;
-  height: 100vh;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 1.45rem;
   color: #313131;
+  margin: 30px;
+  border: 1px solid #bfbfbf;
+  border-radius: 14px;
 }
 
 .page-container {
