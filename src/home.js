@@ -15,7 +15,7 @@ export const Home = () => {
   const navigate = useNavigate();
   const [playing, setPlaying] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
-  const isAfter = isAfterDate("2023-04-28");
+  const isAfter = isAfterDate("2023-04-29");
 
   useEffect(() => {
     isAfter && navigate("/booking");
